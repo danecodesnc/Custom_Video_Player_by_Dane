@@ -9,8 +9,18 @@ const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
 //functions
+
 function togglePlay() {
     const method = video.paused ? 'play' : 'pause';
     video[method]();
     
 }
+
+function updateButton()
+
+//event listeners
+
+video.addEventListener('click', togglePlay);
+video.addEventListener('play', togglePlay);
+
+toggle.addEventListener('click', togglePlay);
