@@ -16,11 +16,14 @@ function togglePlay() {
     
 }
 
-function updateButton()
+function updateButton() {
+    const icon = this.pause
+    console.log('Update the botton')
+}
 
 //event listeners
 
 video.addEventListener('click', togglePlay);
-video.addEventListener('play', togglePlay);
-
+video.addEventListener('play', updateButton);
+video.addEventListener('pause', updateButton);
 toggle.addEventListener('click', togglePlay);
