@@ -1,0 +1,1 @@
+const player = documnet.querySelector('.player');
